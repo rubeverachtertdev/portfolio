@@ -115,3 +115,36 @@ footer {
     color: #a0a0b0;
     font-size: 14px;
 }
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #e94560;
+}
+#project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #16213e;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-card a {
+    color: #e94560;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}

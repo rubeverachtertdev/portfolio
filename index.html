@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rube | Developer</title>
+    <style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 </head>
 <body>
-    <nav>
+   <nav>
     <span>Rube</span>
     <ul>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li><a href="#hero">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
@@ -38,7 +43,13 @@
 
 <section id="projects">
     <h2>Projects</h2>
-    <p>Coming soon...</p>
+    <div id="project-grid">
+        <div class="project-card">
+            <h3>Coming soon</h3>
+            <p>My first project will be here shortly</p>
+            <a href="#">View project</a>
+        </div>
+    </div>
 </section>
 
 <section id="contact">
@@ -46,6 +57,22 @@
     <p>Want to work together or just say hi?</p>
     <a href="mailto:Rubeverachtertdev@gmail.com">Rubeverachtertdev@gmail.com</a>
 </section>
+<script>
+    const text = "Hi, I'm Rube";
+    const hero = document.querySelector('#hero-text h1');
+    hero.textContent = '';
+    let i = 0;
+
+    function type() {
+        if (i < text.length) {
+            hero.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, 100);
+        }
+    }
+
+    type();
+</script>
 </body>
 <footer>
     <p>Made by Rube © 2026</p>
