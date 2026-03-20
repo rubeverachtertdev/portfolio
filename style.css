@@ -148,3 +148,34 @@ nav a:hover {
 .project-card a:hover {
     text-decoration: underline;
 }
+#accomplishment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.accomplishment-card {
+    background-color: #16213e;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.acc-icon {
+    font-size: 32px;
+}
+.acc-btn {
+    padding: 8px 18px;
+    background-color: #e94560;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.acc-btn:hover {
+    background-color: #c73652;
+}
